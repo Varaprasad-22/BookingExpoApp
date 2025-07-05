@@ -1,0 +1,32 @@
+<View style={{backgroundColor:"rgba(255,255,255,0.2)",padding:10,margin:10}}>
+                {/* this block is for the name and price to be situated side by side */}
+                <View style={{flex:1,flexDirection:"row",alignContent:"center",justifyContent:"space-between"}}>
+                    <Text style={{fontSize:16,fontWeight:"bold"}}>{name}</Text>
+                    <Text style={{color:"#3f51b5",fontWeight:500}}>₹{newprice[priceIndex]}</Text>
+                </View>
+                {/* this block is for setting quantity */}
+                <View>
+                    {/* //on touch */}
+                    <TouchableOpacity onPress={decrease} style={styles.minus}>
+                        <FontAwesome name="minus" size={10} color={"white"}/>
+                    </TouchableOpacity>
+                    <Text>{quantity}</Text>
+                    <TouchableOpacity onPress={increase} style={styles.plus}>
+                        <FontAwesome name="plus" size={10} color={"white"}/>
+                    </TouchableOpacity>
+                </View>
+                {/* this is for selecting sizes  */}
+                <View>
+                    {newsizes.length>0&&
+                        newsizes.map((item,index)=>(
+                           
+                            <TouchableOpacity 
+                            key={index}
+                            onPress={()=>handleChange(index)}>
+                                <Text style={{}}>{item}</Text>
+                            </TouchableOpacity>
+                           
+                        ))
+                    }
+                </View>
+                </View>

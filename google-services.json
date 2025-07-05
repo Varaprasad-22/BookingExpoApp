@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702921604602",
+    "project_id": "gitproject-7a8e3",
+    "storage_bucket": "gitproject-7a8e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702921604602:android:8344ec95b09e500e42b843",
+        "android_client_info": {
+          "package_name": "com.bookings"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPcJW-gJG0tYl2gUamIuur3e7LpzKGPhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
